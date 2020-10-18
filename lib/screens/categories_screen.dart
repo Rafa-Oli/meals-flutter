@@ -12,6 +12,7 @@ class CategoriesScreen extends StatelessWidget {
         centerTitle: true,
       ),
       body: GridView(
+        padding: const EdgeInsets.all(25),
         gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
           // como a grid será renderizada: de forma horizontal
           maxCrossAxisExtent: 200,
