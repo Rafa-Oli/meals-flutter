@@ -9,12 +9,19 @@ class CategoryItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 100.00,
+      width: 100.00,
       padding: EdgeInsets.all(15),
       child: Text(
         category.title,
         style: Theme.of(context).textTheme.headline6,
       ),
       decoration: BoxDecoration(
+        image: DecorationImage(
+          image: AssetImage(category.image),
+          fit: BoxFit.fitHeight,
+          scale: 4.0,
+        ),
         color: category.color,
         boxShadow: [
           BoxShadow(
