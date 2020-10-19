@@ -53,6 +53,11 @@ flutter:
     - assets/images/relogio.png
     - assets/images/hamburger.png
     - assets/images/salsichas.png
+    - assets/images/maca.png
+    - assets/images/cezve.png
+    - assets/images/cafe-da-manha.png
+    - assets/images/arroz.png
+    - assets/images/sorvete.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
