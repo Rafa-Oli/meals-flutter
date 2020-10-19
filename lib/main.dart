@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'screens/categories_screen.dart';
 import 'dart:ui';
 import 'screens/categories_meals_screen.dart';
+import 'utils/app_routes.dart';
 
 void main() => runApp(MyApp());
 
@@ -22,9 +23,10 @@ class MyApp extends StatelessWidget {
                 fontFamily: 'RobotoCondensed',
               )),
         ),
-        home: CategoriesScreen(),
         routes: {
-          '/categories-meals': (ctx) => CategoriesMealsScreen(),
+          AppRoutes.HOME: (ctx) =>
+              CategoriesScreen(), // rota raiz como padrão a iniciar
+          AppRoutes.CATEGORIES_MEALS: (ctx) => CategoriesMealsScreen(),
         });
   }
 }
