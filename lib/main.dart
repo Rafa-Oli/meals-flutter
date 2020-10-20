@@ -4,6 +4,7 @@ import 'dart:ui';
 import 'screens/categories_meals_screen.dart';
 import 'utils/app_routes.dart';
 import 'screens/meal_details_screen.dart';
+import 'screens/tabs_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
         AppRoutes.HOME: (ctx) =>
-            CategoriesScreen(), // rota raiz como padrão a iniciar
+            TabsScreen(), // rota raiz como padrão a iniciar
         AppRoutes.CATEGORIES_MEALS: (ctx) => CategoriesMealsScreen(),
         AppRoutes.MEAL_DETAIL: (ctx) => MealDetailScreen(),
       },
