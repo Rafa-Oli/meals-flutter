@@ -7,13 +7,13 @@ const DUMMY_CATEGORIES = const [
   Category(
     image: 'assets/images/pizza.png',
     id: 'c1',
-    title: 'Italiano',
+    title: 'Italian',
     color: Colors.white,
   ),
   Category(
     image: 'assets/images/relogio.png',
     id: 'c2',
-    title: 'Rápido & Fácil',
+    title: 'Quick and Easy',
     color: Colors.white,
   ),
   Category(
@@ -25,43 +25,43 @@ const DUMMY_CATEGORIES = const [
   Category(
     image: 'assets/images/salsichas.png',
     id: 'c4',
-    title: 'Alemã',
+    title: 'German',
     color: Colors.white,
   ),
   Category(
     image: 'assets/images/maca.png',
     id: 'c5',
-    title: 'Leve & Saudável',
+    title: 'Light and Healthy',
     color: Colors.white,
   ),
   Category(
     image: 'assets/images/cezve.png',
     id: 'c6',
-    title: 'Exótica',
+    title: 'Exotic',
     color: Colors.white,
   ),
   Category(
     image: 'assets/images/cafe-da-manha.png',
     id: 'c7',
-    title: 'Café da Manhã',
+    title: 'Breakfast',
     color: Colors.white,
   ),
   Category(
     id: 'c8',
     image: 'assets/images/arroz.png',
-    title: 'Asiática',
+    title: 'Asian',
     color: Colors.white,
   ),
   Category(
     image: 'assets/images/croissant.png',
     id: 'c9',
-    title: 'Francesa',
+    title: 'French',
     color: Colors.white,
   ),
   Category(
     image: 'assets/images/sorvete.png',
     id: 'c10',
-    title: 'Verão',
+    title: 'Summer',
     color: Colors.white,
   ),
 ];
