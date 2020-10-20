@@ -11,24 +11,26 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'DeliMeals',
-        theme: ThemeData(
-          primaryColor: Colors.teal,
-          accentColor: Colors.amber,
-          fontFamily: 'Raleway',
-          canvasColor: Colors.white,
-          textTheme: ThemeData.light().textTheme.copyWith(
-                  headline6: TextStyle(
+      title: 'DeliMeals',
+      theme: ThemeData(
+        primaryColor: Colors.teal,
+        accentColor: Colors.amber,
+        fontFamily: 'Raleway',
+        canvasColor: Colors.white,
+        textTheme: ThemeData.light().textTheme.copyWith(
+              headline6: TextStyle(
                 color: Colors.teal,
                 fontSize: 20,
                 fontFamily: 'RobotoCondensed',
-              )),
-        ),
-        routes: {
-          AppRoutes.HOME: (ctx) =>
-              CategoriesScreen(), // rota raiz como padrão a iniciar
-          AppRoutes.CATEGORIES_MEALS: (ctx) => CategoriesMealsScreen(),
-          AppRoutes.MEAL_DETAIL: (ctx) => MealDetailScreen(),
-        });
+              ),
+            ),
+      ),
+      routes: {
+        AppRoutes.HOME: (ctx) =>
+            CategoriesScreen(), // rota raiz como padrão a iniciar
+        AppRoutes.CATEGORIES_MEALS: (ctx) => CategoriesMealsScreen(),
+        AppRoutes.MEAL_DETAIL: (ctx) => MealDetailScreen(),
+      },
+    );
   }
 }
