@@ -16,7 +16,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     Function onChanged,
   ) {
     return SwitchListTile.adaptive(
-      value: null,
+      value: value,
       subtitle: Text(subtitle),
       onChanged: onChanged,
       title: Text(title),
