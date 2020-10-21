@@ -54,14 +54,15 @@ class MealDetailScreen extends StatelessWidget {
                 itemCount: meal.ingredients.length,
                 itemBuilder: (ctx, index) {
                   return Card(
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(
-                          vertical: 5,
-                          horizontal: 10,
-                        ),
-                        child: Text(meal.ingredients[index]),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(
+                        vertical: 5,
+                        horizontal: 10,
                       ),
-                      color: Theme.of(context).accentColor);
+                      child: Text(meal.ingredients[index]),
+                    ),
+                    color: Colors.orange[400],
+                  );
                 },
               ),
             ),

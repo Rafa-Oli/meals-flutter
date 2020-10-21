@@ -12,7 +12,7 @@ class MainDrawer extends StatelessWidget {
         label,
         style: TextStyle(
           fontFamily: 'RobotoCondensed',
-          fontSize: 24,
+          fontSize: 21,
           fontWeight: FontWeight.bold,
         ),
       ),
@@ -25,20 +25,36 @@ class MainDrawer extends StatelessWidget {
     return Drawer(
       child: Column(
         children: [
-          Container(
-            height: 120,
-            width: double.infinity,
-            padding: EdgeInsets.all(20),
-            color: Theme.of(context).accentColor,
-            alignment: Alignment.bottomRight,
-            child: Text(
-              "Let's Cook?",
-              style: TextStyle(
-                fontWeight: FontWeight.w900,
-                fontSize: 30,
-                color: Theme.of(context).primaryColor,
+          Stack(
+            children: <Widget>[
+              ClipRRect(
+                child: Image.network(
+                  "https://i.pinimg.com/originals/76/89/c5/7689c5513084cd3ae199cec4f9b84af3.jpg",
+                  height: 210,
+                  width: double.infinity,
+                  fit: BoxFit.cover,
+                ),
               ),
-            ),
+              Positioned(
+                bottom: 50,
+                left: 100,
+                child: Container(
+                  width: 300,
+                  padding: EdgeInsets.symmetric(
+                    vertical: 5,
+                    horizontal: 20,
+                  ),
+                  child: Text(
+                    "Let's Cook?",
+                    style: TextStyle(
+                      fontWeight: FontWeight.w900,
+                      fontSize: 30,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ),
+            ],
           ),
           SizedBox(height: 20),
           _createItem(
@@ -46,6 +62,7 @@ class MainDrawer extends StatelessWidget {
             'Meals',
             () => Navigator.of(context).pushReplacementNamed(AppRoutes.HOME),
           ),
+          Divider(),
           _createItem(
             Icons.settings,
             'Settings',
