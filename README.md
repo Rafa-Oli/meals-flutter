@@ -26,6 +26,8 @@ Meals is the project assigned to recipes defined according to its category. Simp
 
 
 
+![](https://i.imgur.com/akhzMgZ.gif)
+
 
 <p align="center">
   <img height="400" src="https://imgur.com/akhzMgZ.gif""/>
