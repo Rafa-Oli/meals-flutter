@@ -1,7 +1,11 @@
 ![stacks](https://img.shields.io/badge/Flutter-1.22.2-informational) ![stacks](https://img.shields.io/badge/Dart-2.10.2-informational)  
 
 
-<h1 align:center> Meals </h1>
+<i><h1 align="center"> Meals </h1></i>
+
+
+
+# *Meals* 
 
 *Meals is the project assigned to recipes defined according to its category. Simple design using various Widgets, bringing more beauty to the simple application.*
 
@@ -11,8 +15,8 @@
 
 
 
-
-<i><b>Details about the category's meal, Drawer and settings to filter desired foods: </b></em>                                                                         
+## *Details about the category's meal, Drawer and settings to filter desired foods:*
+                                                               
  
 <img height="450" align="center" src="https://imgur.com/iHBeSND.jpeg" alt="projeto"/>           
  
@@ -24,6 +28,17 @@
 
 
 
+
+## *Tools and Widgets* 
+
+- [x] Flutter
+- [x] Dart
+- [x] Drawer
+- [x] Basic state management
+- [x] BottomNavigationBar
+- [x] SwitchListTile
+- [x] Material
+- [x] Route definitions
 
 
 
