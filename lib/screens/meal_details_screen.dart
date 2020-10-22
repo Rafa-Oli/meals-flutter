@@ -61,7 +61,7 @@ class MealDetailScreen extends StatelessWidget {
                       ),
                       child: Text(meal.ingredients[index]),
                     ),
-                    color: Colors.orange[400],
+                    color: Colors.orange[300],
                   );
                 },
               ),
@@ -75,6 +75,7 @@ class MealDetailScreen extends StatelessWidget {
                     children: [
                       ListTile(
                         leading: CircleAvatar(
+                          backgroundColor: Colors.teal,
                           child: Text('${index + 1}'),
                         ),
                         title: Text(

@@ -28,6 +28,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Settings'),
+        centerTitle: true,
       ),
       drawer: MainDrawer(),
       body: Column(

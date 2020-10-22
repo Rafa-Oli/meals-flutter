@@ -6,13 +6,14 @@ class MainDrawer extends StatelessWidget {
     return ListTile(
       leading: Icon(
         icon,
+        color: Colors.teal,
         size: 26,
       ),
       title: Text(
         label,
         style: TextStyle(
           fontFamily: 'RobotoCondensed',
-          fontSize: 21,
+          fontSize: 20,
           fontWeight: FontWeight.bold,
         ),
       ),
@@ -30,7 +31,7 @@ class MainDrawer extends StatelessWidget {
               ClipRRect(
                 child: Image.network(
                   "https://i.pinimg.com/originals/76/89/c5/7689c5513084cd3ae199cec4f9b84af3.jpg",
-                  height: 210,
+                  height: 208,
                   width: double.infinity,
                   fit: BoxFit.cover,
                 ),
