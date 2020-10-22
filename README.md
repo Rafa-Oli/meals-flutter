@@ -18,7 +18,7 @@
 ## *Details about the category's meal, Drawer and settings to filter desired foods:*
                                                                
  
-<img height="450" align="center" src="https://imgur.com/iHBeSND.jpeg" alt="projeto"/><img height="450" align="center" src="https://imgur.com/E9625S1.jpeg" alt="projeto"/><img height="450" align="center" src="https://imgur.com/kgXdVDN.jpeg" alt="projeto"/>
+<img height="450" align="center" src="https://imgur.com/iHBeSND.jpeg" alt="projeto"/>   <img height="450" align="center" src="https://imgur.com/E9625S1.jpeg" alt="projeto"/>    <img height="450" align="center" src="https://imgur.com/kgXdVDN.jpeg" alt="projeto"/>
 
 
 
