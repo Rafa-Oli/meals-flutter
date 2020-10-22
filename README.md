@@ -11,11 +11,6 @@
 <i><b>Details about the category's meal, Drawer and settings to filter desired foods: </b></em>                                                                         
  
 <img height="450" align="center" src="https://imgur.com/iHBeSND.jpeg" alt="projeto"/>           
-
-
-
-
-<i><b>Drawer: </b></em>
  
  
  <img height="450" align="center" src="https://imgur.com/E9625S1.jpeg" alt="projeto"/>
