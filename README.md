@@ -23,7 +23,7 @@
 
 
 
-## *Tools and Widgets* 
+## *Tools and Widgets:* 
 
 - [x] Flutter
 - [x] Dart
@@ -34,20 +34,6 @@
 - [x] Material
 - [x] Route definitions
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+---
+###### Developed in the Flutter Course [Cod3r](https://www.cod3r.com.br/) by [Rafaela Oliveira](https://www.linkedin.com/in/rafaelao/).
 
