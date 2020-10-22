@@ -5,7 +5,7 @@
 
 
 
-# *Meals* 
+
 
 *Meals is the project assigned to recipes defined according to its category. Simple design using various Widgets, bringing more beauty to the simple application.*
 
