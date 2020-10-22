@@ -1,14 +1,14 @@
 ![stacks](https://img.shields.io/badge/Flutter-1.22.2-informational) ![stacks](https://img.shields.io/badge/Dart-2.10.2-informational)  
 
 
-<i><b> Meals </b></em>
+<h1 align=“center”> Meals </h1>
 
 Meals is the project assigned to recipes defined according to its category. Simple design using various Widgets, bringing more beauty to the simple application.
 
 <img height="450" align="center" src="https://imgur.com/34H1zdR.jpeg" alt="projeto"/>  <img height="450" align="center" src="https://imgur.com/9LIpTNn.jpeg" alt="projeto"/> 
 
 
-<i><b>Details: </b></em>                                                                         
+<i><b>Details about the category's meal, Drawer and settings to filter desired foods. </b></em>                                                                         
  
 <img height="450" align="center" src="https://imgur.com/iHBeSND.jpeg" alt="projeto"/>           
 
