@@ -5,7 +5,11 @@
 
 *Meals is the project assigned to recipes defined according to its category. Simple design using various Widgets, bringing more beauty to the simple application.*
 
-<img height="450" align="center" src="https://imgur.com/34H1zdR.jpeg" alt="projeto"/>  <img height="450" align="center" src="https://imgur.com/9LIpTNn.jpeg" alt="projeto"/> 
+<img height="450" align="center" src="https://imgur.com/34H1zdR.jpeg" alt="projeto"/>  <img height="450" align="center" src="https://imgur.com/9LIpTNn.jpeg" alt="projeto"/> <img height="450" align="center" src="https://i.imgur.com/kO9SjAn.gif" alt="projeto"/>
+
+
+
+
 
 
 <i><b>Details about the category's meal, Drawer and settings to filter desired foods: </b></em>                                                                         
@@ -31,10 +35,6 @@
 
 
 
-
-<p align="center">
-  <img height="450" src="https://i.imgur.com/kO9SjAn.gif"/>
-</p>
 
 
 
