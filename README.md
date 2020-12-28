@@ -1,7 +1,7 @@
 ![stacks](https://img.shields.io/badge/Flutter-1.22.2-informational) ![stacks](https://img.shields.io/badge/Dart-2.10.2-informational)  
 
 
-<i><h1 align="center"> Meals </h1></i>
+<i><h1 align="center"> Meals :fries:</h1></i>
 
 
 
