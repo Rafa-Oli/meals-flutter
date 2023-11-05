@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+
 import '../models/category.dart';
-import '../screens/categories_meals_screen.dart';
 import '../utils/app_routes.dart';
 
 class CategoryItem extends StatelessWidget {
@@ -26,12 +26,12 @@ class CategoryItem extends StatelessWidget {
           padding: EdgeInsets.all(15),
           child: Text(
             category.title,
-            style: Theme.of(context).textTheme.headline6,
+            style: Theme.of(context).textTheme.titleLarge,
           ),
           decoration: BoxDecoration(
             image: DecorationImage(
               image: AssetImage(
-                category.image,
+                category.image!,
               ),
               matchTextDirection: true,
               alignment: Alignment.bottomRight,

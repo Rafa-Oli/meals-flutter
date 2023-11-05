@@ -13,7 +13,7 @@ class MealDetailScreen extends StatelessWidget {
       ),
       child: Text(
         title,
-        style: Theme.of(context).textTheme.headline6,
+        style: Theme.of(context).textTheme.titleLarge,
       ),
     );
   }
@@ -35,7 +35,7 @@ class MealDetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final meal = ModalRoute.of(context).settings.arguments as Meal;
+    final meal = ModalRoute.of(context)?.settings.arguments as Meal;
     return Scaffold(
       appBar: AppBar(
         title: Text(meal.title),
@@ -97,8 +97,7 @@ class MealDetailScreen extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
           backgroundColor: Colors.deepOrangeAccent,
-          child: Icon(isFavorite(meal) ? Icons.star : Icons.star_border,
-              color: Colors.white),
+          child: Icon(isFavorite(meal) ? Icons.star : Icons.star_border, color: Colors.white),
           onPressed: () {
             ontoggleFavorite(meal);
           }),

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'categories_screen.dart';
-import 'favorite_screen.dart';
+
 import '../components/main_drawer.dart';
 import '../models/meal.dart';
+import 'categories_screen.dart';
+import 'favorite_screen.dart';
 
 class TabsScreen extends StatefulWidget {
   final List<Meal> favoriteMeals;
@@ -14,7 +15,7 @@ class TabsScreen extends StatefulWidget {
 
 class _TabsScreenState extends State<TabsScreen> {
   int _selectedScreenIndex = 0;
-  List<Map<String, Object>> _screens;
+  late List<Map<String, Object>> _screens;
 
   @override
   void initState() {
@@ -41,26 +42,26 @@ class _TabsScreenState extends State<TabsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(_screens[_selectedScreenIndex]['title']),
+        title: Text(_screens[_selectedScreenIndex]['title'] as String),
         centerTitle: true,
       ),
       drawer: MainDrawer(),
-      body: _screens[_selectedScreenIndex]['screen'],
+      body: _screens[_selectedScreenIndex]['screen'] as Widget,
       bottomNavigationBar: BottomNavigationBar(
         //propriedade do scaffold para ficar na parte inferior
         onTap: _selectScreen,
         unselectedItemColor: Colors.white,
         backgroundColor: Theme.of(context).primaryColor,
-        selectedItemColor: Theme.of(context).accentColor,
+        selectedItemColor: Theme.of(context).colorScheme.secondary,
         currentIndex: _selectedScreenIndex,
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.category),
-            title: Text('Categories'),
+            label: 'Categories',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.star),
-            title: Text('Favorites'),
+            label: 'Favorites',
           ),
         ],
       ),
