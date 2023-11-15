@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-import 'data/dummy_data.dart';
-import 'models/meal.dart';
-import 'models/settings.dart';
-import 'screens/categories_meals_screen.dart';
-import 'screens/meal_details_screen.dart';
-import 'screens/settings_screen.dart';
-import 'screens/tabs_screen.dart';
-import 'utils/app_routes.dart';
+import '../data/dummy_data.dart';
+import '../data/models/meal.dart';
+import '../data/models/settings.dart';
+import '../ui/screens/categories_meals_screen.dart';
+import '../ui/screens/meal_details_screen.dart';
+import '../ui/screens/settings_screen.dart';
+import '../ui/screens/tabs_screen.dart';
+import '../ui/utils/app_routes.dart';
 
 void main() => runApp(MyApp());
 
@@ -17,7 +17,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  Settings settings = Settings(); // vai esta com o estado de quais configurações foram setadas nas configurações
+  Settings settings = Settings();
 
   List<Meal> _availableMeals = DUMMY_MEALS;
   List<Meal> _favoriteMeals = [];
@@ -25,7 +25,6 @@ class _MyAppState extends State<MyApp> {
   void _filterMeals(Settings settings) {
     setState(() {
       _availableMeals = DUMMY_MEALS.where((meal) {
-        // filtrando em cima da lista original
         this.settings = settings; // setando a configuração e salvando
         final filterGluten = settings.isGlutenFree && !meal.isGlutenFree;
         final filterLactose = settings.isLactoseFree && !meal.isLactoseFree;

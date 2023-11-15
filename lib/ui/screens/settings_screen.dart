@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../data/models/settings.dart';
 import '../components/main_drawer.dart';
-import '../models/settings.dart';
 
 class SettingsScreen extends StatefulWidget {
   final Settings settings;

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../data/models/meal.dart';
 import '../components/main_drawer.dart';
-import '../models/meal.dart';
 import 'categories_screen.dart';
 import 'favorite_screen.dart';
 

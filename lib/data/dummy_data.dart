@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../models/category.dart';
-import '../models/meal.dart';
+import 'models/category.dart';
+import 'models/meal.dart';
 
 const DUMMY_CATEGORIES = const [
   Category(
@@ -71,19 +71,12 @@ const DUMMY_MEALS = const [
     id: 'm1',
     categories: ['c1', 'c2'],
     title: 'Spaghetti with Tomato Sauce',
-    cost: Cost.Cheap,
-    complexity: Complexity.Simple,
+    cost: CostModel.Cheap,
+    complexity: ComplexityModel.Simple,
     imageUrl:
         'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Spaghetti_Bolognese_mit_Parmesan_oder_Grana_Padano.jpg/800px-Spaghetti_Bolognese_mit_Parmesan_oder_Grana_Padano.jpg',
     duration: 20,
-    ingredients: [
-      '4 Tomatoes',
-      '1 Tablespoon of Olive Oil',
-      '1 Onion',
-      '250g Spaghetti',
-      'Spices',
-      'Cheese (optional)'
-    ],
+    ingredients: ['4 Tomatoes', '1 Tablespoon of Olive Oil', '1 Onion', '250g Spaghetti', 'Spices', 'Cheese (optional)'],
     steps: [
       'Cut the tomatoes and the onion into small pieces.',
       'Boil some water - add salt to it once it boils.',
@@ -102,18 +95,11 @@ const DUMMY_MEALS = const [
     id: 'm2',
     categories: ['c2'],
     title: 'Toast Hawaii',
-    cost: Cost.Cheap,
-    complexity: Complexity.Simple,
-    imageUrl:
-        'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',
+    cost: CostModel.Cheap,
+    complexity: ComplexityModel.Simple,
+    imageUrl: 'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',
     duration: 10,
-    ingredients: [
-      '1 Slice White Bread',
-      '1 Slice Ham',
-      '1 Slice Pineapple',
-      '1-2 Slices of Cheese',
-      'Butter'
-    ],
+    ingredients: ['1 Slice White Bread', '1 Slice Ham', '1 Slice Pineapple', '1-2 Slices of Cheese', 'Butter'],
     steps: [
       'Butter one side of the white bread',
       'Layer ham, the pineapple and cheese on the white bread',
@@ -128,19 +114,11 @@ const DUMMY_MEALS = const [
     id: 'm3',
     categories: ['c2', 'c3'],
     title: 'Classic Hamburger',
-    cost: Cost.Fair,
-    complexity: Complexity.Simple,
-    imageUrl:
-        'https://cdn.pixabay.com/photo/2014/10/23/18/05/burger-500054_1280.jpg',
+    cost: CostModel.Fair,
+    complexity: ComplexityModel.Simple,
+    imageUrl: 'https://cdn.pixabay.com/photo/2014/10/23/18/05/burger-500054_1280.jpg',
     duration: 45,
-    ingredients: [
-      '300g Cattle Hack',
-      '1 Tomato',
-      '1 Cucumber',
-      '1 Onion',
-      'Ketchup',
-      '2 Burger Buns'
-    ],
+    ingredients: ['300g Cattle Hack', '1 Tomato', '1 Cucumber', '1 Onion', 'Ketchup', '2 Burger Buns'],
     steps: [
       'Form 2 patties',
       'Fry the patties for c. 4 minutes on each side',
@@ -157,21 +135,11 @@ const DUMMY_MEALS = const [
     id: 'm4',
     categories: ['c4'],
     title: 'Wiener Schnitzel',
-    cost: Cost.Expensive,
-    complexity: Complexity.Medium,
-    imageUrl:
-        'https://cdn.pixabay.com/photo/2018/03/31/19/29/schnitzel-3279045_1280.jpg',
+    cost: CostModel.Expensive,
+    complexity: ComplexityModel.Medium,
+    imageUrl: 'https://cdn.pixabay.com/photo/2018/03/31/19/29/schnitzel-3279045_1280.jpg',
     duration: 60,
-    ingredients: [
-      '8 Veal Cutlets',
-      '4 Eggs',
-      '200g Bread Crumbs',
-      '100g Flour',
-      '300ml Butter',
-      '100g Vegetable Oil',
-      'Salt',
-      'Lemon Slices'
-    ],
+    ingredients: ['8 Veal Cutlets', '4 Eggs', '200g Bread Crumbs', '100g Flour', '300ml Butter', '100g Vegetable Oil', 'Salt', 'Lemon Slices'],
     steps: [
       'Tenderize the veal to about 2–4mm, and salt on both sides.',
       'On a flat plate, stir the eggs briefly with a fork.',
@@ -190,22 +158,11 @@ const DUMMY_MEALS = const [
     id: 'm5',
     categories: ['c2', 'c5', 'c10'],
     title: 'Salad with Smoked Salmon',
-    cost: Cost.Expensive,
-    complexity: Complexity.Simple,
-    imageUrl:
-        'https://cdn.pixabay.com/photo/2016/10/25/13/29/smoked-salmon-salad-1768890_1280.jpg',
+    cost: CostModel.Expensive,
+    complexity: ComplexityModel.Simple,
+    imageUrl: 'https://cdn.pixabay.com/photo/2016/10/25/13/29/smoked-salmon-salad-1768890_1280.jpg',
     duration: 15,
-    ingredients: [
-      'Arugula',
-      'Lamb\'s Lettuce',
-      'Parsley',
-      'Fennel',
-      '200g Smoked Salmon',
-      'Mustard',
-      'Balsamic Vinegar',
-      'Olive Oil',
-      'Salt and Pepper'
-    ],
+    ingredients: ['Arugula', 'Lamb\'s Lettuce', 'Parsley', 'Fennel', '200g Smoked Salmon', 'Mustard', 'Balsamic Vinegar', 'Olive Oil', 'Salt and Pepper'],
     steps: [
       'Wash and cut salad and herbs',
       'Dice the salmon',
@@ -222,10 +179,9 @@ const DUMMY_MEALS = const [
     id: 'm6',
     categories: ['c6', 'c10'],
     title: 'Delicious Orange Mousse',
-    cost: Cost.Cheap,
-    complexity: Complexity.Difficult,
-    imageUrl:
-        'https://cdn.pixabay.com/photo/2017/05/01/05/18/pastry-2274750_1280.jpg',
+    cost: CostModel.Cheap,
+    complexity: ComplexityModel.Difficult,
+    imageUrl: 'https://cdn.pixabay.com/photo/2017/05/01/05/18/pastry-2274750_1280.jpg',
     duration: 240,
     ingredients: [
       '4 Sheets of Gelatine',
@@ -255,10 +211,9 @@ const DUMMY_MEALS = const [
     id: 'm7',
     categories: ['c7'],
     title: 'Pancakes',
-    cost: Cost.Cheap,
-    complexity: Complexity.Simple,
-    imageUrl:
-        'https://cdn.pixabay.com/photo/2018/07/10/21/23/pancake-3529653_1280.jpg',
+    cost: CostModel.Cheap,
+    complexity: ComplexityModel.Simple,
+    imageUrl: 'https://cdn.pixabay.com/photo/2018/07/10/21/23/pancake-3529653_1280.jpg',
     duration: 20,
     ingredients: [
       '1 1/2 Cups all-purpose Flour',
@@ -284,10 +239,9 @@ const DUMMY_MEALS = const [
     id: 'm8',
     categories: ['c8'],
     title: 'Creamy Indian Chicken Curry',
-    cost: Cost.Fair,
-    complexity: Complexity.Medium,
-    imageUrl:
-        'https://cdn.pixabay.com/photo/2018/06/18/16/05/indian-food-3482749_1280.jpg',
+    cost: CostModel.Fair,
+    complexity: ComplexityModel.Medium,
+    imageUrl: 'https://cdn.pixabay.com/photo/2018/06/18/16/05/indian-food-3482749_1280.jpg',
     duration: 35,
     ingredients: [
       '4 Chicken Breasts',
@@ -315,10 +269,9 @@ const DUMMY_MEALS = const [
     id: 'm9',
     categories: ['c9'],
     title: 'Chocolate Souffle',
-    cost: Cost.Cheap,
-    complexity: Complexity.Difficult,
-    imageUrl:
-        'https://cdn.pixabay.com/photo/2014/08/07/21/07/souffle-412785_1280.jpg',
+    cost: CostModel.Cheap,
+    complexity: ComplexityModel.Difficult,
+    imageUrl: 'https://cdn.pixabay.com/photo/2014/08/07/21/07/souffle-412785_1280.jpg',
     duration: 45,
     ingredients: [
       '1 Teaspoon melted Butter',
@@ -362,18 +315,11 @@ const DUMMY_MEALS = const [
     id: 'm10',
     categories: ['c2', 'c5', 'c10'],
     title: 'Asparagus Salad with Cherry Tomatoes',
-    cost: Cost.Expensive,
-    complexity: Complexity.Simple,
-    imageUrl:
-        'https://cdn.pixabay.com/photo/2018/04/09/18/26/asparagus-3304997_1280.jpg',
+    cost: CostModel.Expensive,
+    complexity: ComplexityModel.Simple,
+    imageUrl: 'https://cdn.pixabay.com/photo/2018/04/09/18/26/asparagus-3304997_1280.jpg',
     duration: 30,
-    ingredients: [
-      'White and Green Asparagus',
-      '30g Pine Nuts',
-      '300g Cherry Tomatoes',
-      'Salad',
-      'Salt, Pepper and Olive Oil'
-    ],
+    ingredients: ['White and Green Asparagus', '30g Pine Nuts', '300g Cherry Tomatoes', 'Salad', 'Salt, Pepper and Olive Oil'],
     steps: [
       'Wash, peel and cut the asparagus',
       'Cook in salted water',
@@ -392,10 +338,9 @@ const DUMMY_MEALS = const [
     id: 'm11',
     categories: ['c1'],
     title: 'Pizza',
-    cost: Cost.Fair,
-    complexity: Complexity.Medium,
-    imageUrl:
-        'https://rossopizza.com.br/salao/wp-content/uploads/2019/09/istock-181175167.jpg',
+    cost: CostModel.Fair,
+    complexity: ComplexityModel.Medium,
+    imageUrl: 'https://rossopizza.com.br/salao/wp-content/uploads/2019/09/istock-181175167.jpg',
     duration: 120,
     ingredients: [
       '6 cups of wheat flour (about 840 g)',
@@ -426,10 +371,9 @@ const DUMMY_MEALS = const [
     id: 'm12',
     categories: ['c2', 'c10'],
     title: 'Ice Cream',
-    cost: Cost.Cheap,
-    complexity: Complexity.Simple,
-    imageUrl:
-        'https://blog.gsuplementos.com.br/wp-content/uploads/2017/02/iStock-152142737.jpg',
+    cost: CostModel.Cheap,
+    complexity: ComplexityModel.Simple,
+    imageUrl: 'https://blog.gsuplementos.com.br/wp-content/uploads/2017/02/iStock-152142737.jpg',
     duration: 30,
     ingredients: [
       '1 can of condensed milk',
@@ -454,10 +398,9 @@ const DUMMY_MEALS = const [
     id: 'm13',
     categories: ['c1', 'c2'],
     title: 'Lasagna Bolognese',
-    cost: Cost.Cheap,
-    complexity: Complexity.Simple,
-    imageUrl:
-        'https://www.massaleve.com.br/uploads/images/receitas/29-receita-massa-leve-lasanha-bolonhesa-com-mussarela-de-bufala.jpg',
+    cost: CostModel.Cheap,
+    complexity: ComplexityModel.Simple,
+    imageUrl: 'https://www.massaleve.com.br/uploads/images/receitas/29-receita-massa-leve-lasanha-bolonhesa-com-mussarela-de-bufala.jpg',
     duration: 40,
     ingredients: [
       '3 tablespoons of margarine',
@@ -498,10 +441,9 @@ const DUMMY_MEALS = const [
     id: 'm13',
     categories: ['c9', 'c2'],
     title: 'Macarons au chocolat',
-    cost: Cost.Fair,
-    complexity: Complexity.Medium,
-    imageUrl:
-        'https://vejasp.abril.com.br/wp-content/uploads/2012/11/dmacaronslm53.jpg',
+    cost: CostModel.Fair,
+    complexity: ComplexityModel.Medium,
+    imageUrl: 'https://vejasp.abril.com.br/wp-content/uploads/2012/11/dmacaronslm53.jpg',
     duration: 30,
     ingredients: [
       '90 g of almond flour, if not found it may be cashew nut flour.',

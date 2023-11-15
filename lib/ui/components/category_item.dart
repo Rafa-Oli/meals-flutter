@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:meals/domain/entities/category_entity.dart';
 
-import '../models/category.dart';
 import '../utils/app_routes.dart';
 
 class CategoryItem extends StatelessWidget {
-  final Category category;
+  final CategoryEntity category;
 
   const CategoryItem(this.category);
 

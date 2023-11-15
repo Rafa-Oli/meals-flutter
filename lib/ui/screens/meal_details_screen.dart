@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:meals/models/meal.dart';
+import 'package:meals/data/models/meal.dart';
 
 class MealDetailScreen extends StatelessWidget {
   final Function(Meal) ontoggleFavorite;
